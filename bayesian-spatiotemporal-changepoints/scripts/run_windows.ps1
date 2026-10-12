@@ -1,7 +1,7 @@
 # PowerShell from repository root. Install first: python -m pip install -e ".[test]"
 param(
-  [string]$Panel = "data/rseimean_删除指定城市(1).csv",
-  [string]$Coords = "data/收缩城市坐标数据.xlsx"
+  [string]$Panel = "",
+  [string]$Coords = ""
 )
 stcp --panel $Panel --coords $Coords `
   --distance euclidean --k 5 `
