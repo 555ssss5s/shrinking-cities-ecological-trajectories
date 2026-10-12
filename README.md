@@ -5,7 +5,7 @@ Analysis code for studying ecological trajectories and their driving mechanisms 
 ## Contents
 
 - **Piecewise SEM:** R code for baseline model estimation and temporal–spatial robustness analyses, including AR(1) correction, residual Moran’s I tests, and Moran’s eigenvector map (MEM) filtering.
-- **Bayesian spatiotemporal changepoints:** Python code for a hierarchical model that jointly estimates changepoint occurrence and timing, including an explicit no-change state.
+- **Bayesian spatiotemporal changepoints:** Python code for a hierarchical model that jointly estimates changepoint occurrence and timing.
 
 ## Requirements and Usage
 
