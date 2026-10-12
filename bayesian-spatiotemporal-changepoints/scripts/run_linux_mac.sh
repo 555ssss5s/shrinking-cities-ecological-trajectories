@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
-PANEL=${1:-'data/rseimean_删除指定城市(1).csv'}
-COORDS=${2:-'data/收缩城市坐标数据.xlsx'}
+PANEL=${1:-''}
+COORDS=${2:-''}
 stcp --panel "$PANEL" --coords "$COORDS" \
   --distance euclidean --k 5 \
   --chains 4 --n-iter 6000 --burn 2000 --thin 4 \
