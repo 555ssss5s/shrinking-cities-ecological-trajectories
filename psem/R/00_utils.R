@@ -29,7 +29,6 @@ read_panel_data <- function() {
   if (!file.exists(project_paths$panel)) stop("Missing input: ", project_paths$panel)
   dat <- readxl::read_excel(project_paths$panel, sheet = 1)
 
-  if (!"CRO" %in% names(dat) && "FAR" %in% names(dat)) dat$CRO <- dat$FAR
 
   required <- c(
     "year", "city", "city_code", "RSEI", "POP", "PD", "GPBE", "ELE", "SLO",
